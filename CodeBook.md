@@ -42,6 +42,8 @@ All Mag in column’s name replaced by Magnitude
 All start with character f in column’s name replaced by Frequency
 All start with character t in column’s name replaced by Time
 
-##From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject
-FinalData (180 rows, 88 columns) is created by sumarizing TidyData taking the means of each variable for each activity and each subject, after groupped by subject and activity.
-Export FinalData into FinalData.txt file.
+##From the data set in sync 4, makes every second, free clean informational collection with the normal of every factor for every movement and each subject 
+
+FinalData (180 rows, 88 columns) is made by sumarizing TidyData taking the methods for every factor for every movement and each subject, after groupped by subject and action. 
+
+Fare FinalData into FinalData.txt document.
