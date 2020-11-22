@@ -1,20 +1,13 @@
 library(dplyr)
-# Loading required packages
 filename <- "Coursera_DS3_Final.zip"
 
-# Download the dataset
-# Checking if archieve already exists.
+# Download the dataset. Checking if archieve already exists.
 if (!file.exists(filename)){
   fileURL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
   download.file(fileURL, filename, method="curl")
 }  
 
-# Checking if folder exists
-if (!file.exists("UCI HAR Dataset")) { 
-  unzip(filename) 
-}
-
-# Assigning all data frames
+# Assign all data frames
 features <- read.table("UCI HAR Dataset/features.txt", col.names = c("n","functions"))
 activities <- read.table("UCI HAR Dataset/activity_labels.txt", col.names = c("code", "activity"))
 subject_test <- read.table("UCI HAR Dataset/test/subject_test.txt", col.names = "subject")
